@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Acme Site</title>
+        <!-- uikit css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.4/css/uikit.min.css" />
+        <style>
+        .divider {
+        border-right: 1px solid #ccc;
+        padding: 0 55px;
+        }
+        .divider:last-child {
+        border-right: none;
+        }
+        p.uk-text-center.uk-text-large {
+        color: #fff;
+        opacity: 1.0;
+        }
+        @media (max-width: 800px ) {
+        .divider{
+        border-right: none;
+        border-top: 1px solid #e5e5e5;
+        
+        padding: 15px;
+        }
+        .divider:first-child {
+        border-top: none;
+        }
+        }
+        </style>
+    </head>
+    <body>
+        <header class="uk-background-secondary uk-light" uk-sticky="sel-target: .uk-navbar; cls-active: uk-navbar-sticky">
+            <nav uk-navbar >
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-item uk-logo" href="#">Acme</a>
+                </div>
+                <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav" uk-scrollspy-nav="closest: li; scroll: true">
+                        <li><a href="#hero" uk-scroll>Home</a></li>
+                        <li><a href="#about" uk-scroll>About</a></li>
+                        <li><a href="#contact" uk-scroll>Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        
+        <section id="hero" uk-height-viewport class="uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="https://images.unsplash.com/photo-1543245883-b631737145f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" uk-img>
+            
+            <div class="uk-section uk-align-center uk-width-2-3@m uk-padding ">
+                <div uk-parallax="target: h1,p; blur: 0,10;">
+                    <h1 class="uk-text-center uk-heading-large">Welcome to Acme.</h1>
+                    <p class="uk-text-center uk-text-large " >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro sint neque nihil libero quaerat aliquam voluptates quia ex consectetur ipsam saepe alias dolore, eligendi officiis quos doloribus doloremque optio error facere explicabo iste architecto soluta?</p>
+                </div>
+            </div>
+            <hr>
+        </section>
+        
+        <section id="about" uk-height-viewport class="uk-flex uk-flex-center uk-flex-middle uk-margin-medium" >
+            <div class="uk-container">
+                <div class="uk-child-width-1-3@s" uk-grid uk-height-match="target: > div > .uk-card" uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 500; repeat: true">
+                    <div class="html">
+                        
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <img class="uk-margin-top" width="380" data-src="img/html5.png" height="360" alt="" uk-img>
+                            </div>
+                            <div class="uk-card-body">
+                                <p class="uk-text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="css">
+                        
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <img class="uk-margin-top" width="380" data-src="img/css3.png"  height="360" alt="" uk-img>
+                            </div>
+                            <div class="uk-card-body">
+                                <p class="uk-text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="php ">
+                        
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <img class="uk-margin-top" width="380" data-src="img/rsz_p9.png" height="360" alt="" uk-img>
+                            </div>
+                            <div class="uk-card-body">
+                                <p class="uk-text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </section>
+        
+        <section id="contact" uk-height-viewport  class="uk-flex uk-flex-center uk-flex-middle uk-margin-medium">
+            <div class="uk-container ">
+                <div class="uk-section uk-padding uk-box-shadow-medium" uk-scrollspy="cls: uk-animation-slide-bottom; target: .uk-grid-medium; delay: 300; repeat: true">
+                    <div class="uk-grid-medium uk-align-center" uk-grid>
+                        <h2 class="uk-heading-medium uk-margin-top uk-text-center">Contact Us</h2>
+                        <div class="uk-divider-small uk-text-center"></div>
+                        <div class="uk-width-2-3@s uk-width-1-1 uk-align-center">
+                            <form action="" class="uk-grid-small"  uk-grid>
+                                <div class="uk-width-1-5@s uk-width-1-1 ">
+                                    <label for="fname">First Name</label>
+                                </div>
+                                <div class="uk-width-4-5@s uk-width-1-1 ">
+                                    <input placeholder="Kamau" type="text" name="fname" id="fname" class="uk-input">
+                                </div>
+                                <div class="uk-width-1-5@s uk-width-1-1 ">
+                                    <label for="lname">Last Name</label>
+                                </div>
+                                <div class="uk-width-4-5@s uk-width-1-1 ">
+                                    <input placeholder="Muriungi" type="text" name="lname" id="lname" class="uk-input">
+                                </div>
+                                <div class="uk-width-1-5@s uk-width-1-1">
+                                    <label for="email">Email</label>
+                                </div>
+                                <div class="uk-width-4-5@s uk-width-1-1 ">
+                                    <input placeholder="kmuriungi@example.com" type="email" name="email" id="email" class="uk-input">
+                                </div>
+                                <div class="uk-width-1-5@s uk-width-1-1 ">
+                                    <label for="message">Message</label>
+                                </div>
+                                <div class="uk-width-4-5@s uk-width-1-1 ">
+                                    <textarea name="message" id="message"  rows="3" class="uk-textarea" placeholder="Hi. I am writing to...."></textarea>
+                                </div>
+                                <div class="uk-width-4-5@s uk-align-right uk-margin-auto-left">
+                                    <button type="submit" class=" uk-button uk-button-primary">Send</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer class="uk-background-secondary uk-light" >
+            
+            <div class="uk-section uk-section-secondary uk-light">
+                <div class="uk-container" uk-scrollspy="cls: uk-animation-slide-bottom; target: .uk-grid-match; delay: 300; repeat: true">
+                    <div class="uk-grid-match uk-grid-small uk-child-width-1-3@m" uk-grid>
+                        <div class="divider">
+                            <h4 class="uk-heading-small">Site Map</h4>
+                            <ul class="uk-nav uk-nav-primary"  uk-scrollspy-nav="closest: li; scroll: true">
+                                <li><a href="#hero" uk-scroll>Home</a></li>
+                                <li><a href="#about" uk-scroll>About</a></li>
+                                <li><a href="#contact" uk-scroll>Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="divider ">
+                            <h4 class="uk-heading-small">Address</h4>
+                            <ul class="uk-nav uk-nav-default uk-nav-primary">
+                                <li class="uk-text-large">Umoja, Nairobi Kenya</li>
+                                <li class="uk-text-large">P.O. Box 1122-00200</li>
+                                <li class="uk-text-large">Nairobi</li>
+                            </ul>
+                            
+                        </div>
+                        <div class="divider ">
+                            <h4 class="uk-heading-small">Social Media</h4>
+                            <ul class="uk-iconnav">
+                                <li><a href="#" uk-icon="icon: facebook; ratio: 2"></a></li>
+                                <li><a href="#" uk-icon="icon: twitter; ratio: 2"></a></li>
+                                <li><a href="#" uk-icon="icon: instagram; ratio: 2"></a></li>
+                                <li><a href="#" uk-icon="icon: youtube; ratio: 2"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-1 uk-flex uk-flex-center uk-margin-medium-top uk-margin-remove-bottom" uk-scrollspy="cls: uk-animation-slide-bottom; target: p; delay: 300; repeat: true">
+                        <p>&copy;2019 Bonge Tech</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.4/js/uikit.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.4/js/uikit-icons.min.js"></script>
+    </body>
+</html>
